@@ -1,0 +1,12 @@
+https://demo.bosathemes.com/educator/template-kit/home/
+
+
+Documentation :-
+
+font-family: Mulish
+font-family: Poppins
+
+Primary-color-pink: #f24080
+Primary-color-black: #414141
+
+color-white: #ffffff
