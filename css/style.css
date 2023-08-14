@@ -111,34 +111,34 @@ p{
     padding-right: 24%;
 }
 .flex-basis-50{
-    flex-basis: 50%;
+    width: 50%;
 }
 .flex-basis-45{
-    flex-basis: 45%;
+    width: 45%;
 }
 .flex-basis-25{
-    flex-basis: 25%;
+    width: 25%;
 }
 .flex-basis-33{
-    flex-basis: 33%;
+    width: 33%;
 }
 .flex-basis-30{
-    flex-basis: 30%;
+    width: 30%;
 }
 .flex-basis-60{
-    flex-basis: 60%;
+    width: 60%;
 }
 .flex-basis-48{
-    flex-basis: 48%;
+    width: 48%;
 }
 .flex-basis-49{
-    flex-basis: 49%;
+    width: 49%;
 }
 .flex-basis-40{
-    flex-basis: 40%;
+    width: 40%;
 }
 .flex-basis-20{
-    flex-basis: 20%;
+    width: 20%;
 }
 h2,h3, h4, h5{
     font-family: var(--title-font);
@@ -150,6 +150,11 @@ h2,h3, h4, h5{
 .title h3{
     font-size: var(--fs-42);
     margin-bottom: 20px;
+}
+.title .zigzag img{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
 }
 .d-block{
     display: block;
@@ -260,7 +265,8 @@ header a{
     color: white;
     font-family: var(--title-font);
 }
-.zigzag img{
+.owl-carousel .owl-item .zigzag img {
+    display: inline-block;
     width: 120px;
     height: 40px;
 }
@@ -279,15 +285,27 @@ header a{
     width: 11%;
     height: 25%;
     top: 73%;
-    left: 48%;
+    left: 52%;
     opacity: 0.5;
 }
 .main-menu-girl-bgcircle{
-    left: 55%;
+    left: 60%;
     top: 10%;
-    width: 31%;
+    /* width: 31%; */
     height: 90%;
     opacity: 0.8;
+}
+.banner .owl-dots{
+    display: none;
+}
+.banner .owl-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.owl-prev span, .owl-next span{
+    display: none;
 }
 
 /* .......... WHY STUDENT .......... */
@@ -302,14 +320,14 @@ header a{
     z-index: -1;
     opacity: 0.4;
 }
-.image-left{
+.image-left, .image-right{
     width: 100%;
     height: 350px;
     border-radius: 20px;
     margin-bottom: 20px;
     overflow: hidden;
 }
-.image-left img{
+.image-left img, .image-right img{
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -402,8 +420,8 @@ header a{
     opacity: 0.5;
 }
 .category-heading, .category{
-    width: 100%;
-    height: 300px;
+    /* width: 100%;
+    height: 300px; */
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -588,7 +606,7 @@ form .login{
 /* ......... Limitless Learning .......... */
 
 .limitless-learning{
-    background-image: url(../images/limiteless-learning-&-commite-the-resullt-bgimg-&-checkout-our-blog-1.jpg);
+    background-image: url(../images/limiteless-learning-&-commite-the-resullt-bgimg.jpg);
     position: relative;
     z-index: 1;
 }
@@ -663,7 +681,6 @@ height: 280px;
 }
 
 /* .......... Our Best Features .......... */
-
 .our-best-feature .best-f{
     padding: 20px;
 }
@@ -727,7 +744,7 @@ height: 280px;
     box-shadow: 0 0 5px rgb(199, 198, 198);
     border-radius: 50%;
     left: 40%;
-    top: 392px;
+    top: 369px;
     transition: all 0.5s;
 }
 .best-f a{
@@ -749,7 +766,7 @@ height: 280px;
 } 
 .best-teacher .title-right{
     justify-content: flex-end;
-    flex-basis: 20%;
+    /* flex-basis: 20%; */
 }
 .professors{
     margin-top: 20px;
@@ -761,8 +778,9 @@ height: 280px;
 }
 .professor .image{
     padding: 10px;
-    width: 241px;
-    height: 241px;
+    /* width: 241px;
+    height: 241px; */
+    margin: auto;
     background-color: rgb(236, 228, 228);
     border-radius: 50%;
     overflow: hidden;
@@ -819,6 +837,7 @@ height: 280px;
 }
 .best-result .left .image img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .play{
@@ -856,7 +875,7 @@ height: 280px;
 /* .......... counter ........ */
 
 .counter-2{
-    background-image: url(../images/limiteless-learning-&-commite-the-resullt-bgimg-&-checkout-our-blog-1.jpg);
+    background-image: url(../images/limiteless-learning-&-commite-the-resullt-bgimg.jpg);
     height: 500px;
     z-index: 1;
 }
